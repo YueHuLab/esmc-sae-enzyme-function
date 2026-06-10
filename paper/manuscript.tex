@@ -74,7 +74,7 @@ We establish these claims through four integrated analyses: (1) systematic bench
 
 \subsection{A curated benchmark for microbial enzyme function prediction}
 
-To rigorously evaluate ESMC-SAE features for microbial enzyme function prediction, we curated a balanced dataset from UniProt. Querying SwissProt for reviewed bacterial and archaeal proteins with complete EC annotations (at least three levels) and length 80--700 amino acids yielded 10,256 candidates. We stratified by EC1 superclass and EC3 subclass, sampling uniformly to ensure balanced representation, producing a final benchmark of 4,868 proteins across 161 EC3 subclasses and all seven EC1 classes (EC1: 938; EC2: 998; EC3: 1,100; EC4: 481; EC5: 525; EC6: 376; EC7: 450; Figure~\ref{fig:benchmark}A, inset). For each protein, we extracted SAE feature magnitudes from ESMC-6B layer 60, obtaining per-residue 16,384-dimensional vectors (mean-pooled across residues for protein-level representations). Binary feature vectors were constructed by taking the top-64 activating features per protein, matching the SAE sparsity constraint.
+To rigorously evaluate ESMC-SAE features for microbial enzyme function prediction, we curated a balanced dataset from UniProt. Querying SwissProt for reviewed bacterial and archaeal proteins with complete EC annotations (at least three levels) and length 80--700 amino acids yielded 10,256 candidates. We stratified by EC1 superclass and EC3 subclass, sampling uniformly to ensure balanced representation, producing a final benchmark of 4,868 proteins across 161 EC3 subclasses and all seven EC1 classes (EC1: 938; EC2: 998; EC3: 1,100; EC4: 481; EC5: 525; EC6: 376; EC7: 450; Figure~\ref{fig:benchmark}A). For each protein, we extracted SAE feature magnitudes from ESMC-6B layer 60, obtaining per-residue 16,384-dimensional vectors (mean-pooled across residues for protein-level representations). Binary feature vectors were constructed by taking the top-64 activating features per protein, matching the SAE sparsity constraint.
 
 \subsection{ESMC-SAE features match or exceed BLASTp while providing interpretability}
 
@@ -99,7 +99,14 @@ ESMC-SAE binary + weights & 32,768 & \textbf{0.8563} & \textbf{0.9045} & 0\% \\
 
 The ESMC-SAE advantage is most pronounced in Top-5 accuracy (88.5--90.5\% vs.\ BLASTp's 82.7\%), indicating that SAE features capture broader functional signal beyond the single nearest homolog. For the 123 proteins where BLASTp found no training-set match, ESMC-SAE binary features achieved 62.1\% top-5 accuracy---demonstrating that functional information persists even when sequence homology is undetectable by standard alignment.
 
-The binary representation is particularly notable: using only 64 active features out of 16,384 (0.4\% density), it achieves 78.9\% top-1 accuracy while being naturally amenable to inverted index-based retrieval, with each protein represented as a 64-element set of feature IDs. This sparsity is not a bug but a feature---it enables sub-millisecond Boolean queries over million-protein databases, a capability we explore in related work on protein concept search.
+The binary representation is particularly notable: using only 64 active features out of 16,384 (0.4\% density), it achieves 78.9\% top-1 accuracy while being naturally amenable to inverted index-based retrieval, with each protein represented as a 64-element set of feature IDs.
+
+\begin{figure}[ht]
+\centering
+\includegraphics[width=\textwidth]{figures/fig1_benchmark.pdf}
+\caption{\textbf{EC3 prediction benchmark.} (A) 80/20 stratified evaluation across five methods, 161 EC3 classes, 974 test proteins. (B) Leave-one-EC3-class-out $\rightarrow$ EC1 recovery (60 classes). Values above bars show absolute accuracy; values inside bars show fold-improvement over random baseline (0.143).}
+\label{fig:benchmark}
+\end{figure}
 
 \subsection{Performance in the dark-matter regime}
 
@@ -121,7 +128,14 @@ ESMC-SAE weights & \textbf{0.688} & \textbf{0.760} & \textbf{0.808} & \textbf{0.
 \end{tabular}
 \end{table}
 
-Three observations emerge from this stratified analysis. First, BLASTp excels when any detectable homolog exists, but its performance is inflated in the low-similarity bins because 3-mer Jaccard underestimates alignment-detectable homology. The 12.6\% no-hit rate reveals the true failure mode of homology-based methods. Second, ESMC-SAE consistently outperforms the 3-mer baseline across all bins, with the largest relative gains in the dark-matter regime (49.8\% improvement at $<0.20$). Third, for the 123 proteins where BLASTp found no training-set match, ESMC-SAE binary achieved 62.1\% top-5 accuracy---functional signal persists even when sequence homology is undetectable. This property is critical for metagenomic enzyme discovery, where most proteins of interest share less than 30\% identity with any experimentally characterized enzyme~\cite{santos2025metagenomic, prabakaran2025deciphering}.
+Three observations emerge from this stratified analysis. First, BLASTp excels when any detectable homolog exists, but its performance is inflated in the low-similarity bins because 3-mer Jaccard underestimates alignment-detectable homology. The 12.6\% no-hit rate reveals the true failure mode of homology-based methods. Second, ESMC-SAE consistently outperforms the 3-mer baseline across all bins, with the largest relative gains in the dark-matter regime (49.8\% improvement at $<0.20$). Third, for the 123 proteins where BLASTp found no training-set match, ESMC-SAE binary achieved 62.1\% top-5 accuracy---functional signal persists even when sequence homology is undetectable.
+
+\begin{figure}[ht]
+\centering
+\includegraphics[width=0.85\textwidth]{figures/fig2_stratified.pdf}
+\caption{\textbf{EC3 prediction stratified by sequence similarity to training set.} Top-5 accuracy across six 3-mer Jaccard bins. BLASTp performs well when homologs exist but fails entirely for 12.6\% of test proteins (no hits). ESMC-SAE provides predictions for 100\% of queries with consistent accuracy across all bins. Bin sizes: $n$=594, 80, 44, 28, 19, 86.}
+\label{fig:stratified}
+\end{figure}
 
 \subsection{Generalization to unseen enzyme classes}
 
@@ -148,7 +162,14 @@ True EC7 & 0.04 & 0.09 & 0.12 & 0.07 & 0.06 & 0.19 & 0.43 & 0.431 \\
 \end{tabular}
 \end{table}
 
-The 3.3$\times$ improvement over the random baseline is particularly noteworthy given the difficulty of the LOCO task: the classifier has never seen any protein from the held-out EC3 subclass during training, yet the SAE features preserve sufficient functional signal to correctly identify the chemical nature of the catalyzed reaction. This property directly enables the discovery of enzymes with novel substrate specificities within known reaction classes.
+The 3.3$\times$ improvement over the random baseline is particularly noteworthy given the difficulty of the LOCO task: the classifier has never seen any protein from the held-out EC3 subclass during training, yet the SAE features preserve sufficient functional signal to correctly identify the chemical nature of the catalyzed reaction.
+
+\begin{figure}[ht]
+\centering
+\includegraphics[width=\textwidth]{figures/fig3_LOCO_comparison.pdf}
+\caption{\textbf{Leave-one-EC3-class-out analysis and full method comparison.} (A) EC1 recovery confusion matrix for ESMC-SAE binary features. Diagonal entries show correct EC1 assignment when a complete EC3 subclass is held out. Hydrolases (EC3) show strongest recovery (0.68). (B) Full method comparison across all evaluated approaches including BLASTp. The 12.6\% no-hit rate for BLASTp is annotated.}
+\label{fig:loco}
+\end{figure}
 
 \subsection{SAE features driving EC classification are mechanistically interpretable}
 
@@ -156,7 +177,14 @@ A defining advantage of the ESMC-SAE framework is that every feature dimension c
 
 The top-discriminating features align with well-established biochemical principles, providing face validity for the approach. For hydrolases (EC3), the most informative feature (F10236, MI=0.025) describes ``nucleophilic elbow / catalytic triad geometry characteristic of $\alpha$/$\beta$-hydrolase fold enzymes''---directly capturing the canonical Ser-His-Asp/Glu catalytic machinery that defines this class. For oxidoreductases (EC1), the top feature (F4193, MI=0.037) corresponds to ``Rossmann-fold NAD(P)H-binding segments with conserved GXGXXG phosphate-binding motif.'' For transferases (EC2), the leading feature (F10312, MI=0.022) captures ``phosphate-binding P-loop / Walker A motif (GXXXXGK[TS]) common to kinases and NTP-binding proteins.'' For translocases (EC7), the top feature (F14838, MI=0.066) describes ``multi-helix transmembrane bundles with alternating hydrophobic/polar patterning characteristic of solute transporters and channels.'' Ligases (EC6) showed the highest per-feature MI (F4148, MI=0.055), corresponding to ``ATP-grasp fold / carboxylate-amine ligase domain with conserved ATP-Mg$^{2+}$ coordination geometry.''
 
-The feature category distribution across EC classes reveals functional specialization (Figure~\ref{fig:interpretability}): oxidoreductases and transferases are predominantly discriminated by ligand-binding site features (cofactor and substrate recognition), hydrolases by catalytic function features (active-site geometry), and translocases by membrane-associated features (transmembrane helix organization). This category-level analysis provides a systems-level view of how the SAE codebook organizes enzyme functional space.
+The feature category distribution across EC classes reveals functional specialization (Figure~\ref{fig:interpretability}): oxidoreductases and transferases are predominantly discriminated by ligand-binding site features, hydrolases by catalytic function features, and translocases by membrane-associated features.
+
+\begin{figure}[ht]
+\centering
+\includegraphics[width=\textwidth]{figures/fig4_interpretability.pdf}
+\caption{\textbf{Top SAE features discriminating each EC1 class.} Mutual information scores for the 6 most discriminative features per enzyme class, annotated with GPT-5 biological descriptions and color-coded by feature category. Features correspond to mechanistically interpretable concepts: catalytic triad geometry for hydrolases, NAD(P)H-binding Rossmann folds for oxidoreductases, phosphate-binding P-loops for transferases.}
+\label{fig:interpretability}
+\end{figure}
 
 \subsection{A global survey of microbial enzyme dark matter}
 
@@ -183,7 +211,14 @@ EC7 Translocases & 4,071 & Pseudomonadota (1,303) \\
 
 Of the dark enzyme-like candidates, 60,661 have retrievable UniRef accessions, enabling direct sequence recovery for feature extraction and prediction. The remaining candidates represent cluster representatives whose sequences require cross-referencing through the ESM Atlas protein-to-accession mapping (162 GB, publicly available). The predominance of hydrolases (9,847) and transferases (5,706) among dark candidates mirrors their abundance in known enzyme space and suggests that substantial undiscovered catalytic diversity exists within these well-studied classes---enzymes that catalyze familiar reaction types on previously unknown substrates.
 
-To demonstrate the translational potential, we highlight the 100 most promising dark candidates (Supplementary Table S2), prioritized by domain coverage (indicating well-folded proteins likely to be enzymatically active) and taxonomic diversity. These include predicted hydrolases from uncultured Chloroflexota, transferases from deep-sea Actinomycetota, and oxidoreductases from thermophilic Crenarchaeota---each representing a high-value target for functional metagenomics and enzyme engineering.
+To demonstrate the translational potential, we highlight the 100 most promising dark candidates (Supplementary Table S2), prioritized by domain coverage and taxonomic diversity. These include predicted hydrolases from uncultured Chloroflexota, transferases from deep-sea Actinomycetota, and oxidoreductases from thermophilic Crenarchaeota.
+
+\begin{figure}[ht]
+\centering
+\includegraphics[width=\textwidth]{figures/fig5_dark_matter.pdf}
+\caption{\textbf{Global survey of microbial enzyme dark matter in the ESM Atlas.} (A) Distribution of 169,859 dark enzyme-like cluster representatives by EC1 class, identified from Pfam keyword matching. Hydrolases (9,847) and transferases (5,706) dominate. (B) Phylum-level taxonomic distribution. Pseudomonadota, Actinomycetota, and Bacillota account for 57\% of dark enzyme candidates. 60,661 candidates have retrievable sequences for downstream analysis.}
+\label{fig:dark}
+\end{figure}
 
 \section{Discussion}
 
