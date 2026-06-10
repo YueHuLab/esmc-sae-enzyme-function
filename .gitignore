@@ -35,3 +35,4 @@ venv/
 /tmp/
 *.swp
 *.swo
+esm_protein.pdf
