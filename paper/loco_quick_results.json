@@ -1,0 +1,20 @@
+{
+  "evaluation": "leave-one-EC3-class-out \u2192 EC1",
+  "n_proteins": 4868,
+  "n_ec3_classes_evaluated": 60,
+  "random_baseline": 0.14285714285714285,
+  "results": [
+    {
+      "name": "3-mer binary (8000d)",
+      "ec1_loco": 0.26621371216800493
+    },
+    {
+      "name": "ESMC-SAE binary (16384d)",
+      "ec1_loco": 0.4771463866584311
+    },
+    {
+      "name": "ESMC-SAE weights (16384d)",
+      "ec1_loco": 0.4870290302655961
+    }
+  ]
+}

@@ -1,0 +1,870 @@
+{
+  "n_proteins": 5031,
+  "n_ec1": 7,
+  "ec1_classes": [
+    "1",
+    "2",
+    "3",
+    "4",
+    "5",
+    "6",
+    "7"
+  ],
+  "top_features_per_ec1": {
+    "1": [
+      {
+        "feature_id": 4193,
+        "mi_score": 0.03672978002070604,
+        "description": "C-terminal catalytic lobe of FAD-dependent flavoproteins: a mixed β–α segment (often a loop–helix block) adjacent to the FAD isoalloxazine that shapes the substrate/oxygen/quinone access channel and c",
+        "category": "Ligand-binding site"
+      },
+      {
+        "feature_id": 15782,
+        "mi_score": 0.03590191724296177,
+        "description": "Predominantly flavin-linked oxidoreductase catalytic cores and closely associated redox partners in lipid/quinone/carotenoid metabolism: the feature recognizes the glycine‑rich Rossmann‑like/cofactor‑",
+        "category": "Ligand-binding site"
+      },
+      {
+        "feature_id": 9442,
+        "mi_score": 0.03321059105883073,
+        "description": "Conserved beta-strand–loop–beta-strand element in the redox core of flavoprotein oxidoreductases (FAD/FMN), their associated electron-transfer partners in multi-component complexes (e.g., Fe-S/quinone",
+        "category": "Structural motif"
+      },
+      {
+        "feature_id": 14309,
+        "mi_score": 0.03180121243376033,
+        "description": "C-terminal lid/capping helical subdomain adjacent to the catalytic/cofactor pocket in oxidative enzymes—predominantly FAD/FMN flavoproteins (amine oxidases, monooxygenases/halogenases, heme-pathway fl",
+        "category": "Structural motif"
+      },
+      {
+        "feature_id": 13929,
+        "mi_score": 0.03138758315637702,
+        "description": "N-terminal Rossmann-like FAD-binding β1–loop–α1 element of flavoenzymes: the feature recognizes the glycine-rich phosphate-binding loop (often GxGxxG) and the adjacent α1 helix that anchors FAD’s pyro",
+        "category": "Ligand-binding site"
+      },
+      {
+        "feature_id": 11480,
+        "mi_score": 0.026679283422823108,
+        "description": "Rossmann-fold NAD(P)-binding glycine/threonine-rich loop (β1–α1 dinucleotide-binding site) common to dehydrogenases and related Rossmann enzymes; recognizes variants of the glycine-rich fingerprint (e",
+        "category": "Ligand-binding site"
+      },
+      {
+        "feature_id": 2619,
+        "mi_score": 0.025201895609513247,
+        "description": "Dinucleotide-binding/catalytic capping subdomain of oxidoreductase cores—most prominently in FAD-dependent enzymes—comprising a mid-protein α/β segment (often Rossmann-like) enriched in basic/hydropho",
+        "category": "Domain"
+      },
+      {
+        "feature_id": 15087,
+        "mi_score": 0.024685523937491682,
+        "description": "Rossmann-like dinucleotide/flavin-binding elements—specifically the small-residue phosphate-binding loop and its flanking helix/strand that position NAD(H)/NADP(H) or FAD and mediate hydride transfer ",
+        "category": "Ligand-binding site"
+      },
+      {
+        "feature_id": 4908,
+        "mi_score": 0.024298088936245632,
+        "description": "Adenosine-phosphate binding glycine-rich loop (often GxGG/TGG) and adjoining beta–alpha scaffold that recognizes the adenosine/nicotinamide dinucleotide or adenylate moiety, spanning both Rossmann-lik",
+        "category": "Ligand-binding site"
+      },
+      {
+        "feature_id": 7556,
+        "mi_score": 0.02345822682228138,
+        "description": "A conserved β-strand/loop capping segment in the N-terminal third of enzymes that catalyze redox or closely related small-molecule transformations. In classical flavoprotein oxidoreductases, this corr",
+        "category": "Structural motif"
+      },
+      {
+        "feature_id": 15780,
+        "mi_score": 0.023237833121799056,
+        "description": "Redox-cofactor–proximal catalytic regions of oxidoreductases: primarily the FAD/FMN-binding Rossmann-like glycine-rich loop (GxGxxG) and adjacent beta/alpha elements that position the isoalloxazine an",
+        "category": "Ligand-binding site"
+      },
+      {
+        "feature_id": 6939,
+        "mi_score": 0.022120573822330236,
+        "description": "Conserved N‑terminal/central α/β ligand/cofactor‑binding core—most often the Rossmann‑like segment that includes and follows glycine‑rich loops of FAD/FMN/NAD‑binding domains in oxidoreductases; the f",
+        "category": "Domain"
+      },
+      {
+        "feature_id": 9893,
+        "mi_score": 0.02206939893872195,
+        "description": "Active-site substrate-recognition segment that forms the wall of the catalytic cavity or substrate channel—predominantly in FAD/FMN-dependent oxidoreductases adjacent to the isoalloxazine ring, but al",
+        "category": "Ligand-binding site"
+      },
+      {
+        "feature_id": 7859,
+        "mi_score": 0.021967232931831004,
+        "description": "Conserved N-terminal glycine-rich FAD pyrophosphate–binding loop of Rossmann-like flavoproteins (the β1–α1 loop) and immediately adjacent elements that shape the FAD pocket; the feature highlights res",
+        "category": "Ligand-binding site"
+      },
+      {
+        "feature_id": 4864,
+        "mi_score": 0.020794302956463007,
+        "description": "FAD-binding core/adjacent interface of flavoenzyme oxidoreductases: a conserved β‑strand/loop subdomain that cradles the FAD isoalloxazine and often extends into the flexible segment bridging the FAD ",
+        "category": "Ligand-binding site"
+      },
+      {
+        "feature_id": 16303,
+        "mi_score": 0.02072431385540896,
+        "description": "Iron–sulfur (Fe–S) cluster–binding modules—small ferredoxins and Fe–S–binding subdomains of oxidoreductases (including radical SAM enzymes)—that mediate electron transfer or radical chemistry in proka",
+        "category": "Ligand-binding site"
+      },
+      {
+        "feature_id": 7089,
+        "mi_score": 0.019976727283963713,
+        "description": "Beta1–alpha1 glycine-rich phosphate/pyrophosphate-binding loop at the start of Rossmann-like nucleotide-binding domains—most often the GxGxxG “dinucleotide-binding” fingerprint that anchors FAD or NAD",
+        "category": "Ligand-binding site"
+      },
+      {
+        "feature_id": 4087,
+        "mi_score": 0.019836076486176912,
+        "description": "Conserved anion/nucleotide‑ligand pocket segment: a β–loop–α unit comprising the anion (phosphate/pyrophosphate) and/or ribose‑binding loop and the immediately adjoining α‑helix that line and organize",
+        "category": "Ligand-binding site"
+      },
+      {
+        "feature_id": 12036,
+        "mi_score": 0.019554480275222552,
+        "description": "Short β-strand elements in bilobed, periplasmic/extracellular small‑molecule ligand‑binding domains of the periplasmic binding protein–like superfamily (Venus flytrap/CACHE/SBP folds), including homol",
+        "category": "Ligand-binding site"
+      },
+      {
+        "feature_id": 14924,
+        "mi_score": 0.019468940045401784,
+        "description": "Mobile amphipathic helical/loop “lid” adjacent to a hydrophobic cofactor/ligand pocket—often (but not exclusively) the FAD isoalloxazine site—that gates substrate access and frequently interfaces with",
+        "category": "Structural motif"
+      }
+    ],
+    "2": [
+      {
+        "feature_id": 10312,
+        "mi_score": 0.021795859088482805,
+        "description": "Membrane-proximal coiled-coil signaling linkers—prototypically the HAMP domain and its immediate C‑terminal connector—that couple input/transmembrane regions to downstream effector/catalytic modules; ",
+        "category": "Domain"
+      },
+      {
+        "feature_id": 5699,
+        "mi_score": 0.021717778812272437,
+        "description": "Glycine-rich phosphate-binding loop of ATP-dependent small-molecule kinases, most commonly the Walker A P-loop (β1–loop–α1) of NMPK/guanylate kinase–like folds, but also the analogous phosphate-bindin",
+        "category": "Ligand-binding site"
+      },
+      {
+        "feature_id": 1444,
+        "mi_score": 0.018629513271842146,
+        "description": "Juxtacatalytic C‑terminal regulatory tail of Ser/Thr protein kinases: a short, intrinsically disordered, low‑complexity segment immediately following the kinase catalytic domain, enriched in Ser/Thr‑P",
+        "category": "Disorder"
+      },
+      {
+        "feature_id": 8219,
+        "mi_score": 0.0169330932521774,
+        "description": "PRPP/pyrophosphate-binding module of the type I phosphoribosyltransferase fold—the PPi loop and adjoining α/β elements that form the PRPP site—characterized by a glycine-rich GG(T/S)T loop and a nearb",
+        "category": "Ligand-binding site"
+      },
+      {
+        "feature_id": 8689,
+        "mi_score": 0.015992329013349682,
+        "description": "Non-catalytic, structured segments within soluble enzyme domains—most prominently the C‑terminal portion of the GT51 peptidoglycan transglycosylase fold and the adjacent periplasmic linker to the DD‑t",
+        "category": "Domain"
+      },
+      {
+        "feature_id": 4251,
+        "mi_score": 0.015908124389717004,
+        "description": "DNA major-groove recognition helices of helix–turn–helix (HTH/winged-HTH) promoter-binding domains used by bacterial transcription regulators and sigma factors (especially the recognition helix and it",
+        "category": "Ligand-binding site"
+      },
+      {
+        "feature_id": 9593,
+        "mi_score": 0.015891253955663487,
+        "description": "C-terminal catalytic “cap/lid” subdomain (typically a β–α–β-rich segment) of phosphate/nucleotide‑handling enzymes—most prominently the amino‑acid kinase (AAK) fold, but extending to other small‑molec",
+        "category": "Domain"
+      },
+      {
+        "feature_id": 16191,
+        "mi_score": 0.015558683507303162,
+        "description": "Flexible glycine/proline‑rich, often acidic active‑site loops (and their flanking β‑strand edges) that gate and position phosphate‑bearing nucleotide/cofactor ligands—ATP/ADP, NAD(P), SAM, ribose‑phos",
+        "category": "Ligand-binding site"
+      },
+      {
+        "feature_id": 11617,
+        "mi_score": 0.015376526528556589,
+        "description": "Extended charged/polar low‑complexity repeat regions (often acidic and metal/Ca2+-binding) in secreted/extracellular or periplasmic proteins and in elongated coiled‑coil scaffolds (e.g., flagellins, k",
+        "category": "Compositional bias"
+      },
+      {
+        "feature_id": 14188,
+        "mi_score": 0.015152144445852223,
+        "description": "Conserved N-terminal subdomain of the carbohydrate kinase–like (ribokinase/pfkB) fold that forms the substrate-binding side of the active-site cleft (glycine-rich loop with adjacent acidic/basic resid",
+        "category": "Domain"
+      },
+      {
+        "feature_id": 6970,
+        "mi_score": 0.015030212688798228,
+        "description": "Small‑molecule kinase domains that catalyze NTP‑dependent phosphoryl transfer to phosphate‑bearing small molecules—especially nucleotide/nucleoside monophosphates (EC 2.7.4.x)—with the feature trackin",
+        "category": "Structural motif"
+      },
+      {
+        "feature_id": 13930,
+        "mi_score": 0.014976955998252217,
+        "description": "Long, low-complexity, intrinsically disordered terminal regions (enriched in Gly/Arg/Ser/Pro/Gln) that flank or extend from structured cores and serve as regulatory/interaction segments rather than ca",
+        "category": "Disorder"
+      },
+      {
+        "feature_id": 589,
+        "mi_score": 0.014929150221190568,
+        "description": "NTP-dependent small-molecule kinase module (phosphotransferase core) centered on the guanylate-kinase–like/nucleoside monophosphate (NMP) kinase family and extending to closely related kinase folds (e",
+        "category": "Domain"
+      },
+      {
+        "feature_id": 7285,
+        "mi_score": 0.014843510874116284,
+        "description": "Conserved P-loop NTPase mechanochemical-coupling segment: the arginine/lysine–rich helix and flanking loop(s) in the RecA-like ATPase core that sense nucleotide and transmit hydrolysis to motion (heli",
+        "category": "Ligand-binding site"
+      },
+      {
+        "feature_id": 2863,
+        "mi_score": 0.01471668004896376,
+        "description": "Short, low‑complexity cationic–aromatic patches: Arg/Lys clusters interleaved with Gly/Pro and Trp/Tyr/Phe in flexible N‑terminal segments or loops that mediate generic binding/targeting functions (e.",
+        "category": "Compositional bias"
+      },
+      {
+        "feature_id": 6955,
+        "mi_score": 0.014524753859689321,
+        "description": "Juxtamembrane segments flanking the first transmembrane helix of membrane-anchored signal-transduction proteins—especially bacterial two-component sensor histidine kinases and related membrane signali",
+        "category": "Membrane-associated"
+      },
+      {
+        "feature_id": 9518,
+        "mi_score": 0.014428932963084673,
+        "description": "N‑terminal membrane‑targeting/signal‑anchor signature: a positively charged N‑tail followed by one or more hydrophobic, aromatic‑flanked transmembrane helices that initiate the membrane‑embedded senso",
+        "category": "Membrane-associated"
+      },
+      {
+        "feature_id": 5912,
+        "mi_score": 0.014345145180666652,
+        "description": "Terminal low-complexity segments of carbohydrate-biosynthetic enzymes: the feature marks long N- and/or C-terminal regions that lie outside the structured catalytic core. When present, this includes t",
+        "category": "Disorder"
+      },
+      {
+        "feature_id": 3762,
+        "mi_score": 0.0142514993419105,
+        "description": "Glycine-rich adenosyl-nucleotide cofactor–binding module (Rossmann-like “motif I” loop) and its adjacent helix/strands that contact the adenosyl ribose–phosphate; most prominent in class I SAM/CxSAM m",
+        "category": "Ligand-binding site"
+      },
+      {
+        "feature_id": 13639,
+        "mi_score": 0.014214757660825805,
+        "description": "Primarily hydrophobic membrane-targeting regions of prokaryotic envelope proteins—Sec/Tat signal peptides and signal-anchor/multi-pass transmembrane helices—especially in Actinobacteria (ESX/MmpL syst",
+        "category": "Membrane-associated"
+      }
+    ],
+    "3": [
+      {
+        "feature_id": 10236,
+        "mi_score": 0.025194923562546823,
+        "description": "Mature, folded catalytic cores of secreted/periplasmic enzymes—primarily hydrolases that cleave sulfate-, phospho-, acyl-, and glycosidic bonds—plus periplasmic oxidative folding enzymes (e.g., Dsb/PD",
+        "category": "Domain"
+      },
+      {
+        "feature_id": 13624,
+        "mi_score": 0.020849259952049337,
+        "description": "Mid-domain, small-residue–enriched loop/turn segments at the edges of structured enzyme/sensor domains—“lid/signature” loops that shape substrate or ligand-binding pockets and protein-interaction surf",
+        "category": "Ligand-binding site"
+      },
+      {
+        "feature_id": 10492,
+        "mi_score": 0.020496547969314882,
+        "description": "His/Asp/Glu-enriched, well-ordered alpha‑helical/loop segment that forms or immediately abuts the divalent‑metal coordination environment of metalloenzymes, with a strong bias toward metal‑dependent h",
+        "category": "Ligand-binding site"
+      },
+      {
+        "feature_id": 539,
+        "mi_score": 0.01987242581636295,
+        "description": "Conserved C‑terminal “switch” segment of AAA+ ATPases—the sensor‑2 helix and its adjoining helix/loop region at the end of the catalytic core that couples ATP state to inter‑subunit communication and ",
+        "category": "Domain"
+      },
+      {
+        "feature_id": 10855,
+        "mi_score": 0.019828639345788268,
+        "description": "N-terminal segment of the canonical double-stranded RNA-binding domain (dsRBD/DRBM)—especially the α1 helix and adjacent loop/β1 element that forms the primary dsRNA-contacting surface—and functionall",
+        "category": "Ligand-binding site"
+      },
+      {
+        "feature_id": 3407,
+        "mi_score": 0.019178002914899128,
+        "description": "His/Asp/Glu–rich mid-to-C-terminal helical/loop segments that flank catalytic regions of hydrolases—most prominently Zn2+-metallopeptidases (carboxy-, amino-, di-peptidases and cell-wall amidases)—and",
+        "category": "Compositional bias"
+      },
+      {
+        "feature_id": 631,
+        "mi_score": 0.01825793870080039,
+        "description": "Active-site–adjacent helix/loop patches that line small‑molecule binding or acyl‑intermediate pockets—typically S/T/G/K‑enriched segments within catalytic domains—most prominently in beta‑lactam/pepti",
+        "category": "Ligand-binding site"
+      },
+      {
+        "feature_id": 10033,
+        "mi_score": 0.018236722857542187,
+        "description": "Pre–active-site segment of Zn-dependent metallo-hydrolases—an N-terminal helix/loop/β element immediately adjacent to the catalytic metal-binding His/Asp cluster (e.g., HxHxDH in MBLs) that shapes the",
+        "category": "Catalytic function"
+      },
+      {
+        "feature_id": 4361,
+        "mi_score": 0.01803900013320181,
+        "description": "Divalent-cation (primarily Mg2+/Mn2+)–coordinated phosphate-binding/processing and transport motifs, plus their immediate structural interfaces: the feature targets gly/lys/acidic-rich elements that c",
+        "category": "Ligand-binding site"
+      },
+      {
+        "feature_id": 8047,
+        "mi_score": 0.017964578072338977,
+        "description": "Acidic, surface-exposed loops and disordered segments—often glycine-rich—that include or flank catalytic Glu/Asp residues in metallo-/nucleotide-dependent enzyme active sites (e.g., EAL, Nudix) and an",
+        "category": "Catalytic function"
+      },
+      {
+        "feature_id": 10785,
+        "mi_score": 0.01766481930598429,
+        "description": "C-terminal structured domain segments across diverse proteins, typically long and hydrophobic-enriched, corresponding to the final autonomous module: the last transmembrane bundle in membrane proteins",
+        "category": "Domain"
+      },
+      {
+        "feature_id": 2987,
+        "mi_score": 0.017663621354035097,
+        "description": "Juxtamembrane loop segments immediately following a transmembrane helix—most consistently the TM3→TM4 connecting loop (E2) of small 4‑TM membrane proteins—and the analogous P2 re‑entrant/pore loop in ",
+        "category": "Membrane-associated"
+      },
+      {
+        "feature_id": 7924,
+        "mi_score": 0.017155921168378274,
+        "description": "Intrinsically disordered, low‑complexity regions—long linker and terminal segments (including signal peptides), often enriched in Ser/Thr/Pro and/or Lys/Arg—that flank or connect structured domains; f",
+        "category": "Disorder"
+      },
+      {
+        "feature_id": 3009,
+        "mi_score": 0.016920535146796478,
+        "description": "Structured C-terminal helix/loop/strand segments within mature extracytoplasmic catalytic/sensor domains—most prominently in peptidoglycan-active and beta-lactam–binding folds (PBP/beta-lactamase-like",
+        "category": "Ligand-binding site"
+      },
+      {
+        "feature_id": 11256,
+        "mi_score": 0.01690274547685311,
+        "description": "Active-site–proximal alpha-helical segments within enzyme catalytic domains, typically the short helix immediately C‑terminal to a key catalytic motif/residue (Ser/His/Asp) and adjacent structured ele",
+        "category": "Structural motif"
+      },
+      {
+        "feature_id": 15851,
+        "mi_score": 0.016741691883001675,
+        "description": "Short Fe–S–cluster ligation motifs: the feature recognizes Cys-rich and Cys–His coordination loops that bind [2Fe–2S]/[3Fe–4S]/[4Fe–4S] centers in ferredoxin-like and Rieske proteins, including radica",
+        "category": "Ligand-binding site"
+      },
+      {
+        "feature_id": 6261,
+        "mi_score": 0.016692909226538433,
+        "description": "Conserved S/T‑ and glycine‑rich ATP‑binding loop of Class I adenylate‑forming (ANL) enzymes (the AMP‑binding signature loop; e.g., SSGTTGxPKG region) with secondary recognition of a recurrent helical ",
+        "category": "Ligand-binding site"
+      },
+      {
+        "feature_id": 15960,
+        "mi_score": 0.016533501138841444,
+        "description": "Often metal-dependent polyanion-binding catalytic scaffolds in large enzymes: the feature tracks conserved, highly charged catalytic cores and adjoining nucleic-acid/nucleotide– and other polyanion-bi",
+        "category": "Catalytic function"
+      },
+      {
+        "feature_id": 248,
+        "mi_score": 0.016126146001335773,
+        "description": "SAM-dependent nucleic‑acid methyltransferase catalytic core (class I MTase fold): the cofactor-binding Rossmann-like module and adjacent substrate-recognition/base‑flipping loops used by DNA and RNA m",
+        "category": "Domain"
+      },
+      {
+        "feature_id": 5259,
+        "mi_score": 0.015819786122117208,
+        "description": "A contiguous loop/helix-start segment that scaffolds small-molecule binding in enzyme catalytic cores, with a strong bias for the SAM/SAH-binding lobe of Class I SAM-dependent methyltransferases (espe",
+        "category": "Ligand-binding site"
+      }
+    ],
+    "4": [
+      {
+        "feature_id": 4860,
+        "mi_score": 0.03359648208742305,
+        "description": "C-terminal alpha-helical cap/extension of soluble enzyme domains (often TIM-barrel/class I aldolase-like), a basic, hydrophobic/glycine-enriched helix+coil module that forms interfacial/binding surfac",
+        "category": "Interaction site"
+      },
+      {
+        "feature_id": 5112,
+        "mi_score": 0.028121600683412185,
+        "description": "Catalytic α/β core domains of metabolic enzymes, predominantly (β/α)8 TIM‑barrels, but also including structurally related non‑TIM α/β cores (e.g., IspG/H clamshell reductases and GH6 endoglucanases),",
+        "category": "Domain"
+      },
+      {
+        "feature_id": 13465,
+        "mi_score": 0.0277894806771537,
+        "description": "Conserved anion-binding (phosphate/pyrophosphate/carboxylate) active-site surface of soluble α/β metabolic enzymes—especially, but not limited to, canonical (β/α)8 TIM-barrels—used by primary/cofactor",
+        "category": "Ligand-binding site"
+      },
+      {
+        "feature_id": 13561,
+        "mi_score": 0.02045158075657194,
+        "description": "Alpha/beta enzyme core (TIM‑barrel and closely related alpha/beta folds) used by diverse primary‑metabolism and RNA‑modification enzymes; the feature tracks the β–α alternating scaffold and glycine‑ri",
+        "category": "Domain"
+      },
+      {
+        "feature_id": 8343,
+        "mi_score": 0.01989916766516342,
+        "description": "Active-site β→α loop and helix N-cap motifs at the rims of α/β catalytic domains—predominantly TIM barrels (DHDPS/aldolase, ICL, RuBisCO/RLP, DHOD), but also analogous α/β folds in folate/methionine m",
+        "category": "Structural motif"
+      },
+      {
+        "feature_id": 9989,
+        "mi_score": 0.019621322440279476,
+        "description": "Active-site–adjacent β→α loops and helix N-cap segments on the catalytic face of soluble α/β enzymes (often TIM‑barrel or related folds) that shape/gate small‑molecule binding pockets, especially in c",
+        "category": "Ligand-binding site"
+      },
+      {
+        "feature_id": 10789,
+        "mi_score": 0.018085662974003602,
+        "description": "Conserved N-terminal β1–α1 strand–loop–helix module at the mouth of the (β/α)8 TIM-barrel fold used by central metabolic enzymes (class I aldolases/lyases, isomerases, decarboxylases, and related synt",
+        "category": "Structural motif"
+      },
+      {
+        "feature_id": 7611,
+        "mi_score": 0.01787000239368819,
+        "description": "N-terminal amphipathic alpha-helix/helix-capping segment at the start of soluble metabolic enzymes (especially lyases, aldolases, dehydratases and cofactor-biosynthesis enzymes), enriched in small/pol",
+        "category": "Structural motif"
+      },
+      {
+        "feature_id": 10355,
+        "mi_score": 0.017067095710761482,
+        "description": "Alpha-helix–loop–beta-strand connector modules within α/β enzyme cores (TIM‑barrel–like and related α/β folds) of soluble metabolic enzymes, especially lyases/aldolases and enzymes of amino‑acid and c",
+        "category": "Structural motif"
+      },
+      {
+        "feature_id": 7332,
+        "mi_score": 0.01696639360354113,
+        "description": "Active-site loop segments of alpha/beta catalytic cores (predominantly beta/alpha8 TIM-barrels) that mediate carbanion/proton-transfer chemistry in lyases/dehydratases/aldolases and in cobalamin- or S",
+        "category": "Catalytic function"
+      },
+      {
+        "feature_id": 10027,
+        "mi_score": 0.014220872489407954,
+        "description": "Glycine‑rich, proline‑tolerant flexible connector loops at the mouths of α/β enzymes—typically the beta‑element linkers (β→α or β↔β) that act as mobile active‑site/gating loops in TIM‑barrel/DHDPS‑lik",
+        "category": "Structural motif"
+      },
+      {
+        "feature_id": 4657,
+        "mi_score": 0.01390301247218284,
+        "description": "A conserved C-terminal secondary-structure “cap” (terminal helix or beta-strand plus adjoining coil) that mediates subunit/complex assembly and domain closure in soluble enzymes and complex subunits; ",
+        "category": "Interaction site"
+      },
+      {
+        "feature_id": 5805,
+        "mi_score": 0.013461219438060557,
+        "description": "β/α (TIM)-barrel catalytic core signal, keyed to glycine-rich β→α loops juxtaposed to Asp/Glu that bind anionic ligands (especially phosphate of NAD(P) or sugar phosphates); activates across diverse T",
+        "category": "Ligand-binding site"
+      },
+      {
+        "feature_id": 2307,
+        "mi_score": 0.013419469441507292,
+        "description": "Charged, flexible cofactor/metal-binding loops and thiol motifs: the feature marks electropositive, Gly/Pro-containing segments and conserved cysteines that form binding/coordination sites for anionic",
+        "category": "Ligand-binding site"
+      },
+      {
+        "feature_id": 7627,
+        "mi_score": 0.013073695184147693,
+        "description": "Active-site–proximal loop→helix (often helix–loop–strand) segment that forms the small‑molecule/cofactor binding surface—frequently the phosphate/pyrophosphate- or nucleotide‑binding region (e.g., PLP",
+        "category": "Ligand-binding site"
+      },
+      {
+        "feature_id": 12866,
+        "mi_score": 0.012168402808721224,
+        "description": "Hydrophobic, well‑ordered secondary‑structure segments that either form specific early membrane‑associated helices used for signaling/anchoring (e.g., first TM hairpins and select GPCR helices) or con",
+        "category": "Structural motif"
+      },
+      {
+        "feature_id": 6480,
+        "mi_score": 0.011585071579829798,
+        "description": "Catalytic beta–strand-to–alpha-helix segment of the class III nucleotidyl cyclase homology domain (adenylyl/guanylyl/uridylate cyclases), centered on a glycine-rich loop that often includes an H–x–T–G",
+        "category": "Catalytic function"
+      },
+      {
+        "feature_id": 8424,
+        "mi_score": 0.011538514723535176,
+        "description": "Active-site-facing α/β catalytic cores (TIM-barrel and related folds) of enzyme and enzyme-like proteins across metabolism, i.e., the contiguous interior that shapes substrate pockets and catalytic lo",
+        "category": "Domain"
+      },
+      {
+        "feature_id": 1766,
+        "mi_score": 0.011195794603044762,
+        "description": "N‑terminal charge/polar‑biased segments (low‑complexity tails, transit/encapsulation peptides, and first cytosolic loops) that mediate targeting, assembly, and partner interactions across diverse prot",
+        "category": "Membrane-associated"
+      },
+      {
+        "feature_id": 9871,
+        "mi_score": 0.010775750640791948,
+        "description": "Extended, intrinsically disordered, low‑complexity segments—often acidic and Gly/Pro‑ and polar‑rich—that flank catalytic cores as flexible lids, linkers, or partner‑docking elements; typically in mid",
+        "category": "Domain"
+      }
+    ],
+    "5": [
+      {
+        "feature_id": 6148,
+        "mi_score": 0.03131225838553786,
+        "description": "Catalytic phosphate-handling regions of large nucleic-acid enzymes and associated NTPases: the feature concentrates on conserved active-site neighborhoods that bind or cleave phosphate groups—most pro",
+        "category": "Catalytic function"
+      },
+      {
+        "feature_id": 2652,
+        "mi_score": 0.029029422947425054,
+        "description": "Non-catalytic interaction/clamp surfaces of large macromolecular machines—extended alpha‑helical or intrinsically disordered, charged regions that mediate DNA/RNA binding or protein–protein contacts—t",
+        "category": "Interaction site"
+      },
+      {
+        "feature_id": 184,
+        "mi_score": 0.023708038441995205,
+        "description": "Long, low-complexity regulatory segments enriched in Ser/Thr/Pro/Gly and acidic residues (intrinsically disordered or marginally helical) that mediate flexible binding and regulation in large eukaryot",
+        "category": "Compositional bias"
+      },
+      {
+        "feature_id": 5451,
+        "mi_score": 0.02324688302632061,
+        "description": "Core, soluble structural subunits of large cytosolic macromolecular machines—most prominently gene‑expression/proteostasis complexes (chaperonins GroEL/Cpn60/CCT, DNA‑dependent RNA polymerase core/lar",
+        "category": "Domain"
+      },
+      {
+        "feature_id": 16233,
+        "mi_score": 0.022881543590551168,
+        "description": "Generic structural signal for well‑ordered, non‑membrane α‑helical segments in soluble metabolic enzymes, emphasizing helix‑forming, hydrophobic/aliphatic residues and not tied to catalytic or cofacto",
+        "category": "Structural motif"
+      },
+      {
+        "feature_id": 6884,
+        "mi_score": 0.02142509637943002,
+        "description": "Glycine- and Gly‑Pro–enriched alpha‑helical subdomains that act as flexible, kink‑prone “lid/hinge” or packing modules around functional cores (active sites or macromolecular interfaces), typically lo",
+        "category": "Structural motif"
+      },
+      {
+        "feature_id": 3073,
+        "mi_score": 0.02080461558136526,
+        "description": "Glycine-rich anion-binding loops and their surrounding alpha/beta cores, most often engaging nucleotide- or ribose‑phosphate moieties (PRPP, NAD(P), ATP, inorganic phosphate) across Rossmann-, ribokin",
+        "category": "Ligand-binding site"
+      },
+      {
+        "feature_id": 8725,
+        "mi_score": 0.02053304305578596,
+        "description": "Hydrophobic packing and interface segments: long, aliphatic‑rich stretches (often with glycine) that form transmembrane helices or the non‑catalytic structural cores and oligomerization/assembly surfa",
+        "category": "Compositional bias"
+      },
+      {
+        "feature_id": 14132,
+        "mi_score": 0.020467395984189007,
+        "description": "Change “in soluble α/β enzymes” to “in soluble α/β proteins (enzymes and RNA‑binding scaffolds)” and append “including helices that contact the rRNA sugar‑phosphate backbone in ribosomal proteins.”\n-",
+        "category": "Ligand-binding site"
+      },
+      {
+        "feature_id": 7692,
+        "mi_score": 0.01846337503898554,
+        "description": "Active-site pocket-lining segment (typically a long α-helix flanked by a loop and/or β-strand) within the catalytic core of soluble enzymes that shapes and often directly engages anionic small-molecul",
+        "category": "Ligand-binding site"
+      },
+      {
+        "feature_id": 5977,
+        "mi_score": 0.017843739396496305,
+        "description": "Catalytic or ion-coupling anion/metal-binding cores of large enzyme and transporter domains: glycine-rich phosphate-/nucleotide-binding loops adjacent to acidic Asp/Glu motifs that coordinate metal io",
+        "category": "Catalytic function"
+      },
+      {
+        "feature_id": 7257,
+        "mi_score": 0.01727603133206146,
+        "description": "General structural feature for long, well-ordered alpha-helical segments within catalytic domains of soluble enzymes (helical cores/bundles), independent of specific chemistry or active-site motifs.",
+        "category": "Structural motif"
+      },
+      {
+        "feature_id": 10496,
+        "mi_score": 0.017241354361655636,
+        "description": "N-terminal cofactor/phosphate-binding cores enriched in small/glycine residues, especially glycine-rich loops such as Walker A P-loops (GxxxxGKT/S) and Rossmann-like GxGxxG, together with their surrou",
+        "category": "Ligand-binding site"
+      },
+      {
+        "feature_id": 12659,
+        "mi_score": 0.017173927664346778,
+        "description": "Active-site core segments that coordinate phosphate-bearing ligands/cofactors across diverse enzyme families—most prominently the catalytic lobe of ATP/sugar kinases but also the PLP phosphate–binding",
+        "category": "Ligand-binding site"
+      },
+      {
+        "feature_id": 9239,
+        "mi_score": 0.0168673722574757,
+        "description": "Extended, low‑charge hydrophobic alpha‑helical regions (coiled‑coils and transmembrane helices) that act as structural/assembly scaffolds, most often in the mid‑ to C‑terminal portions of large oligom",
+        "category": "Structural motif"
+      },
+      {
+        "feature_id": 12705,
+        "mi_score": 0.016864984824556117,
+        "description": "Catalytic cores of alpha/beta (often TIM-barrel-like) enzymes that act on nucleotide and sugar-phosphate substrates—most prominently Dus family tRNA dihydrouridine synthases and other RNA-modifying en",
+        "category": "Catalytic function"
+      },
+      {
+        "feature_id": 12466,
+        "mi_score": 0.016729080882199154,
+        "description": "Conserved bacterial/organellar gene‑expression machines centered on ribosome‑associated P‑loop NTPases (translational GTPases and AAA+/ABC ATPases) and their tightly linked RNA metabolism and proteost",
+        "category": "Domain"
+      },
+      {
+        "feature_id": 7442,
+        "mi_score": 0.015674785150329162,
+        "description": "Phosphate-binding chemistry for phosphorylated carbohydrates and sugar-nucleotides, with strongest selectivity for the α-D-phosphohexomutase catalytic core (phosphoserine/Mg2+-dependent active site) a",
+        "category": "Ligand-binding site"
+      },
+      {
+        "feature_id": 2162,
+        "mi_score": 0.014977917763832282,
+        "description": "Peptidyl‑prolyl cis–trans isomerase (PPIase) foldases (EC 5.2.1.8) across multiple families—bacterial Trigger factor, periplasmic parvulin/SurA‑like chaperones, and FKBP‑type immunophilins (including ",
+        "category": "Domain"
+      },
+      {
+        "feature_id": 600,
+        "mi_score": 0.014714809852844679,
+        "description": "N-terminal glycine-/lysine-enriched basic segments—often including glycine-glycine and phosphate-binding loops (Walker A/P-loop or Rossmann-like glycine-rich motifs) and adjacent elements—used for nuc",
+        "category": "Ligand-binding site"
+      }
+    ],
+    "6": [
+      {
+        "feature_id": 4148,
+        "mi_score": 0.05503272137303972,
+        "description": "ATP-dependent carboxylate–amine ligase catalytic core (central ATP-binding/phosphate‑binding module with gly/thr‑rich loop) shared across ATP‑grasp–type and Mur‑ligase–type enzymes, especially those i",
+        "category": "Ligand-binding site"
+      },
+      {
+        "feature_id": 8589,
+        "mi_score": 0.051551496564652854,
+        "description": "Walker A (P-loop) phosphate-binding motif (GxxxxGKT/S) and its immediate structural context (beta1–glycine-rich loop–alpha1) that binds the NTP phosphate in P-loop NTPases (ATP/GTP), across kinases an",
+        "category": "Ligand-binding site"
+      },
+      {
+        "feature_id": 13344,
+        "mi_score": 0.04701897152589307,
+        "description": "Pocket-forming structural segment of enzyme catalytic cores—most enriched in class I glutamine amidotransferase (GATase type‑1) around the L‑glutamine/amide‑donor binding site; frequent moderate-to-st",
+        "category": "Ligand-binding site"
+      },
+      {
+        "feature_id": 11586,
+        "mi_score": 0.04654513162997498,
+        "description": "N-terminal segments that mediate ammonia production and transfer in glutamine-dependent amidotransferase systems—covering glutaminase donor domains (type-1, type-2, CN-hydrolase) and the N-terminal in",
+        "category": "Interaction site"
+      },
+      {
+        "feature_id": 2829,
+        "mi_score": 0.045144129152693724,
+        "description": "Amide-donor transfer/coupling interface in amidating biosynthetic enzymes—primarily the class I glutamine amidotransferase (GATase-type I) module and its docking/linker to the acceptor domain, but als",
+        "category": "Domain"
+      },
+      {
+        "feature_id": 1262,
+        "mi_score": 0.04214756574358969,
+        "description": "AMP-binding/adenylate-forming catalytic core of the ANL superfamily (the acyl‑activating “A” domain that forms acyl‑AMP and then transfers the acyl group to CoA or to a carrier protein), shared by acy",
+        "category": "Domain"
+      },
+      {
+        "feature_id": 4280,
+        "mi_score": 0.04012694352376278,
+        "description": "N-terminal, positively charged nucleic-acid–binding surface of large information/translation enzymes—most prominently the tRNA acceptor‑end/active‑site–proximal interface of aminoacyl‑tRNA synthetases",
+        "category": "Ligand-binding site"
+      },
+      {
+        "feature_id": 13793,
+        "mi_score": 0.039223839808275596,
+        "description": "Catalytic β-strand/loop cores that center a nucleophilic Ser/Cys/Thr and support acyl‑enzyme chemistry—most prominently the N‑terminal active‑site region of class I glutamine amidotransferases—and com",
+        "category": "Catalytic function"
+      },
+      {
+        "feature_id": 6380,
+        "mi_score": 0.037732565342033064,
+        "description": "A conserved active-site–flanking secondary-structure segment within enzyme catalytic domains—typically a long alpha-helix or a beta-strand–loop–beta unit—that buttresses the catalytic core (often imme",
+        "category": "Catalytic function"
+      },
+      {
+        "feature_id": 15694,
+        "mi_score": 0.037632431396659616,
+        "description": "Cysteine-nucleophile active-site neighborhood: a conserved helix–loop–strand core that positions and polarizes a catalytic cysteine (with partnering His/Arg where present) across diverse thiol-depende",
+        "category": "Catalytic function"
+      },
+      {
+        "feature_id": 364,
+        "mi_score": 0.03747893598591001,
+        "description": "Internal gly/pro-rich beta–alpha loop/helix module that stabilizes soluble enzyme cofactors or their anionic handles (phosphate/diphosphate when present) and, in multi-subunit redox/ligase assemblies,",
+        "category": "Ligand-binding site"
+      },
+      {
+        "feature_id": 10464,
+        "mi_score": 0.035806894902151276,
+        "description": "Phosphate-binding active sites in nucleotide-utilizing proteins—primarily Walker A/P-loop NTPases (ABC/AAA+/helicases)—with inclusion of non-Walker ATP-binding folds (histidine-kinase HATPase_c/Berger",
+        "category": "Ligand-binding site"
+      },
+      {
+        "feature_id": 9097,
+        "mi_score": 0.03429964568101096,
+        "description": "Flexible gly/pro–rich β→α loop and the following α-helix that scaffold active‑site loops in hydrolase/phosphatase catalytic domains—most prominently the N‑terminal glutaminase (GATase‑I) nucleophile l",
+        "category": "Structural motif"
+      },
+      {
+        "feature_id": 10121,
+        "mi_score": 0.032637466869987364,
+        "description": "Residues forming anionic-ligand binding surfaces in small‑molecule and nucleic‑acid pockets of primarily soluble enzymes (and some peripheral complex subunits), emphasizing contacts to phosphate or mu",
+        "category": "Ligand-binding site"
+      },
+      {
+        "feature_id": 7897,
+        "mi_score": 0.03175213552850309,
+        "description": "Conserved α/β core surface patches that mediate binding of polyanionic ligands—primarily tRNA/RNA/DNA and/or nucleotide cofactors—with the strongest signal in aminoacyl‑tRNA synthetase and HisRS‑like ",
+        "category": "Ligand-binding site"
+      },
+      {
+        "feature_id": 3022,
+        "mi_score": 0.030532030068544547,
+        "description": "N-terminal β1–α1 cap of cysteine-dependent amidohydrolase-like domains—most prominently the N-terminal subdomain of class I glutamine amidotransferases and DJ-1/glyoxalase folds—capturing the short β-",
+        "category": "Structural motif"
+      },
+      {
+        "feature_id": 5872,
+        "mi_score": 0.03001818643312615,
+        "description": "Flexible inter-domain linker/hinge segments (often loop-helix-loop, enriched in charged/polar and Gly/Pro residues) that connect catalytic and cofactor-binding modules in large, multidomain enzymes an",
+        "category": "Disorder"
+      },
+      {
+        "feature_id": 2545,
+        "mi_score": 0.028992853123363416,
+        "description": "RNA-binding accessory domains that recognize and position tRNA/RNA substrates—especially THUMP and analogous basic, helical N‑terminal subdomains—flanking (and distinct from) catalytic cores in tRNA‑m",
+        "category": "Ligand-binding site"
+      },
+      {
+        "feature_id": 2009,
+        "mi_score": 0.02799206742108984,
+        "description": "Fe–S-dependent hydro-lyases/dehydratases of central metabolism (aconitase/IlvD/EDD superfamily and close variants), recognized via the loop-rich scaffold that coordinates or flanks the [4Fe–4S] center",
+        "category": "Domain"
+      },
+      {
+        "feature_id": 3455,
+        "mi_score": 0.027324339482612592,
+        "description": "Acyltransferase (AT/MAT) domain of fatty‑acid and polyketide synthases—specifically the FabD‑like malonyl-/acyl‑CoA:ACP transacylase core, with strongest preference for the histidine‑containing substr",
+        "category": "Domain"
+      }
+    ],
+    "7": [
+      {
+        "feature_id": 14838,
+        "mi_score": 0.06618978485261429,
+        "description": "ABC family nucleotide-binding domain (NBD) ATPase cassette (PF00005): recognition of the P-loop NTPase core and catalytic machinery of ABC NBDs (Walker A/P-loop, Walker B vicinity, Q-loop, H-loop/swit",
+        "category": "Domain"
+      },
+      {
+        "feature_id": 11339,
+        "mi_score": 0.05625056036928089,
+        "description": "C-terminal boundary and immediately downstream tail of ABC-type ATPase nucleotide-binding domains (NBDs): a short, flexible, charged extension (often including a short terminal helix) just beyond the ",
+        "category": "Domain"
+      },
+      {
+        "feature_id": 2727,
+        "mi_score": 0.04510082104103952,
+        "description": "ABC ATPase nucleotide-binding domains: the C-terminal signature subdomain (C-loop/LSGGQ or GGQ-like motif) and its immediately downstream C-terminal extension that forms the NBD dimer/interface and me",
+        "category": "Domain"
+      },
+      {
+        "feature_id": 12389,
+        "mi_score": 0.04493779989111513,
+        "description": "ABC ATPase NBD coupling module: the Q-loop and adjacent short helix in the helical subdomain that interfaces with the transmembrane “coupling helix” (or equivalent partner) to transmit ATPase state, r",
+        "category": "Interaction site"
+      },
+      {
+        "feature_id": 6658,
+        "mi_score": 0.04146241503282644,
+        "description": "Conserved β-strand–loop–α-helix hinge in the C‑terminal portion of ABC ATPase nucleotide‑binding domains (the switch/H‑loop region and adjacent helix) that mechanically couples ATP hydrolysis to NBD d",
+        "category": "Structural motif"
+      },
+      {
+        "feature_id": 11815,
+        "mi_score": 0.04096452555325447,
+        "description": "Short coil-to-helix “N-cap” segments within the ABC nucleotide-binding domain’s helical subdomain, typically in the signature/C-loop–α4/α5 region rather than the Walker A site; a conserved structural ",
+        "category": "Structural motif"
+      },
+      {
+        "feature_id": 10763,
+        "mi_score": 0.03637867410596529,
+        "description": "ABC ATPase NBD Q-loop/coupling interface: the short β→loop→α element ~15–30 residues C‑terminal to the Walker A (P‑loop) within the nucleotide-binding domain that includes the Q‑loop/Switch I region a",
+        "category": "Interaction site"
+      },
+      {
+        "feature_id": 5392,
+        "mi_score": 0.03383129492283876,
+        "description": "Non-catalytic connector elements of ABC transporters: linkers and short tails that flank ABC nucleotide-binding domains and the adjoining transmembrane modules, plus selected helices/loops within the ",
+        "category": "Membrane-associated"
+      },
+      {
+        "feature_id": 6123,
+        "mi_score": 0.03273924209696277,
+        "description": "Helical segment within the ABC ATPase nucleotide‑binding domain, typically the post–Walker B/switch region helix adjacent to the D‑loop and H‑loop, i.e., the conserved NBD helix involved in catalysis-",
+        "category": "Structural motif"
+      },
+      {
+        "feature_id": 5065,
+        "mi_score": 0.0321438465086592,
+        "description": "Conserved ABC ATPase “signature” region: the C-loop (LSGGQ) and its immediately adjacent helix→loop segment within the nucleotide-binding domain (helical subdomain) that contributes the ABC signature ",
+        "category": "Ligand-binding site"
+      },
+      {
+        "feature_id": 14777,
+        "mi_score": 0.03127075321232864,
+        "description": "Conserved ABC nucleotide-binding domain (NBD) D-loop/switch region and its immediate neighborhood flanking the C-motif (LSGGQ) — a short helix–loop/strand–helix element just N‑terminal to the signatur",
+        "category": "Catalytic function"
+      },
+      {
+        "feature_id": 609,
+        "mi_score": 0.031155408743595014,
+        "description": "Q-loop/switch helix immediately C‑terminal to the Walker A (P-loop) in ABC ATPase nucleotide-binding domains—an invariant short α-helix that houses/adjacent to the conserved Q-loop and mediates coupli",
+        "category": "Structural motif"
+      },
+      {
+        "feature_id": 2279,
+        "mi_score": 0.02962443709718099,
+        "description": "Buried, small/hydrophobic–residue–enriched core segments of structured protein domains (typically enzymes but also nonenzymatic complex subunits) that often scaffold ligand/cofactor/metal/nucleotide-b",
+        "category": "Domain"
+      },
+      {
+        "feature_id": 11420,
+        "mi_score": 0.029532093825773043,
+        "description": "ABC transporter nucleotide-binding domains (NBDs): recognition of the P-loop NTPase core together with ABC-specific conserved motifs and adjacent structural elements (Walker A GxxxxGKS/T, the ABC sign",
+        "category": "Domain"
+      },
+      {
+        "feature_id": 9872,
+        "mi_score": 0.02891374792059409,
+        "description": "ABC-type ATPase nucleotide-binding domains, specifically the catalytic core motifs of the NBD (Walker A P-loop, Walker B and the H-loop/switch region), rather than the LSGGQ signature or transmembrane",
+        "category": "Catalytic function"
+      },
+      {
+        "feature_id": 14909,
+        "mi_score": 0.028813160555633432,
+        "description": "Conserved “ABC signature” C-loop (LSGGQ) region and its immediate structural context within the nucleotide-binding domains (NBDs) of ABC ATPases, which contacts ATP at the NBD dimer interface and coup",
+        "category": "Ligand-binding site"
+      },
+      {
+        "feature_id": 932,
+        "mi_score": 0.02876077104655672,
+        "description": "ABC-family P-loop ATPase nucleotide‑binding domain (NBD) and its coupling interfaces—the conserved ABC ATPase fold (Walker A/B, Q/H/D loops and, where present, the LSGGQ/C‑signature) together with the",
+        "category": "Domain"
+      },
+      {
+        "feature_id": 11511,
+        "mi_score": 0.027791107873863963,
+        "description": "Glycine-rich phosphate/oxyanion–binding loops and their immediately adjacent helices within cytosolic catalytic domains—most prominently the Walker A/P‑loop and ABC transporter signature/switch elemen",
+        "category": "Ligand-binding site"
+      },
+      {
+        "feature_id": 7902,
+        "mi_score": 0.02690332761111236,
+        "description": "P-loop NTPase switch/communication element: short helix–loop segments adjacent to conserved nucleotide-binding motifs (Walker A/B or GTPase G1–G3) that house Switch I/II, Q-loop/sensor, or lid element",
+        "category": "Ligand-binding site"
+      },
+      {
+        "feature_id": 10425,
+        "mi_score": 0.026130842635826435,
+        "description": "Conserved P-loop NTPase nucleotide-binding/switch module: the stretch surrounding the Walker A P-loop and extending into the adjacent hydrolysis-coupling elements (Walker B and Switch/Sensor helices/l",
+        "category": "Ligand-binding site"
+      }
+    ]
+  },
+  "shared_features": {}
+}

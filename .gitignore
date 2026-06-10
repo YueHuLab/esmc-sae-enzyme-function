@@ -1,0 +1,37 @@
+# macOS
+.DS_Store
+__pycache__/
+*.pyc
+
+# Large model files (downloaded separately)
+esm-c-fold2/
+
+# Large data
+*.npy
+*.pkl
+*.parquet
+*.tsv
+!poc/data/swissprot_enzymes.tsv
+
+# Output
+poc/results/
+poc/plots/
+*.log
+*.aux
+*.bbl
+*.blg
+*.out
+
+# Python
+*.egg-info/
+.venv/
+venv/
+
+# IDE
+.vscode/
+.idea/
+
+# Temp
+/tmp/
+*.swp
+*.swo

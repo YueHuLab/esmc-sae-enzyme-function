@@ -1,0 +1,79 @@
+{
+  "dataset": "microbial_swissprot_balanced",
+  "n_proteins": 4868,
+  "n_ec3_classes": 161,
+  "n_ec1_classes": 7,
+  "benchmark_80_20": {
+    "prediction_level": "EC3",
+    "n_train": 3894,
+    "n_test": 974,
+    "results": [
+      {
+        "name": "3-mer binary (8000d)",
+        "top1": 0.5729,
+        "top5": 0.6879,
+        "auroc": 0.9241
+      },
+      {
+        "name": "ESMC-SAE binary (16384d)",
+        "top1": 0.7885,
+        "top5": 0.885,
+        "auroc": 0.974
+      },
+      {
+        "name": "ESMC-SAE weights (16384d)",
+        "top1": 0.8337,
+        "top5": 0.8994,
+        "auroc": 0.9442
+      },
+      {
+        "name": "ESMC-SAE binary+weights (32768d)",
+        "top1": 0.8563,
+        "top5": 0.9045,
+        "auroc": 0.9694
+      }
+    ]
+  },
+  "leave_one_class_out": {
+    "evaluation": "Leave-one-EC3-class-out -> EC1 accuracy",
+    "n_classes_evaluated": 60,
+    "random_baseline": 0.1429,
+    "results": [
+      {
+        "name": "3-mer binary (8000d)",
+        "ec1_loco": 0.2662,
+        "vs_random": "1.9x"
+      },
+      {
+        "name": "ESMC-SAE binary (16384d)",
+        "ec1_loco": 0.4771,
+        "vs_random": "3.3x"
+      },
+      {
+        "name": "ESMC-SAE weights (16384d)",
+        "ec1_loco": 0.487,
+        "vs_random": "3.4x"
+      }
+    ]
+  },
+  "dark_matter": {
+    "total_dark_clusters": 367956,
+    "enzyme_like_dark": 169859,
+    "with_sequences": 60661,
+    "ec1_distribution_dark": {
+      "EC1 Oxidoreductases": 1068,
+      "EC2 Transferases": 5706,
+      "EC3 Hydrolases": 9847,
+      "EC4 Lyases": 2609,
+      "EC5 Isomerases": 254,
+      "EC6 Ligases": 1012,
+      "EC7 Translocases": 4071
+    }
+  },
+  "key_improvements": {
+    "EC3_top1_vs_3mer": "+37.6% (0.7885 vs 0.5729)",
+    "EC3_top5_vs_3mer": "+28.7% (0.8850 vs 0.6879)",
+    "loco_ec1_vs_3mer": "+79.3% (0.4771 vs 0.2662)",
+    "loco_vs_random": "3.3x (0.4771 vs 0.1429)"
+  }
+}
